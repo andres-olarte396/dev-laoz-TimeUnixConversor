@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Tiempo Unix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Conversor de Tiempo Unix</h1>
+    
+    <div class="converter">
+        <label for="unixTime">Timestamp Unix:</label>
+        <input type="number" id="unixTime" placeholder="Ej: 1632873600">
+
+        <button onclick="convertUnixToDate()">Convertir a Fecha</button>
+
+        <div id="dateResult" class="result"></div>
+
+        <label for="dateInput">Fecha (YYYY-MM-DD HH:MM:SS):</label>
+        <input type="text" id="dateInput" placeholder="Ej: 2021-09-29 12:00:00">
+
+        <button onclick="convertDateToUnix()">Convertir a Timestamp Unix</button>
+
+        <div id="unixResult" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+ 
