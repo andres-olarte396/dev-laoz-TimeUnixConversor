@@ -24,26 +24,36 @@
       </p>
     </header>
     <main>
-      <div class="converter">
-        <label for="unixTime">Timestamp Unix:</label>
-        <input type="number" id="unixTime" placeholder="Ej: 1632873600" />
+      <div class="container">
+        <fieldset>
+          <legend>Datos de la tabla</legend>
+          <p>
+            Este proyecto es una herramienta simple que convierte texto en slugs
+            (URLs amigables). Es útil para generar rutas limpias y
+            comprensibles, como las que se utilizan en blogs o sitios web.
+          </p>
+          <div class="converter">
+            <label for="unixTime">Timestamp Unix:</label>
+            <input type="number" id="unixTime" placeholder="Ej: 1632873600" />
 
-        <button onclick="convertUnixToDate()">Convertir a Fecha</button>
+            <button onclick="convertUnixToDate()">Convertir a Fecha</button>
 
-        <div id="dateResult" class="result"></div>
+            <div id="dateResult" class="result"></div>
 
-        <label for="dateInput">Fecha (YYYY-MM-DD HH:MM:SS):</label>
-        <input
-          type="text"
-          id="dateInput"
-          placeholder="Ej: 2021-09-29 12:00:00"
-        />
+            <label for="dateInput">Fecha (YYYY-MM-DD HH:MM:SS):</label>
+            <input
+              type="text"
+              id="dateInput"
+              placeholder="Ej: 2021-09-29 12:00:00"
+            />
 
-        <button onclick="convertDateToUnix()">
-          Convertir a Timestamp Unix
-        </button>
+            <button onclick="convertDateToUnix()">
+              Convertir a Timestamp Unix
+            </button>
 
-        <div id="unixResult" class="result"></div>
+            <div id="unixResult" class="result"></div>
+          </div>
+        </fieldset>
       </div>
     </main>
     <footer>
